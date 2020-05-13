@@ -12,3 +12,17 @@ From this class we added again two subclasses that reflect flavors of coffee (�
 These also got new attributes (“hasAlcohol”, “alcoholType” and milkType respectively),
 and again the associated constructors and methods were added.
 Code Snippets
+
+public abstract class Drink {
+  
+    protected String name;
+    
+    public Drink(String name) {
+        this.name = name;
+    }
+    
+    public abstract double getVolume();
+    
+    public abstract double getAlcoholPercent();
+    
+    public abstract boolean isAlcoholic();
