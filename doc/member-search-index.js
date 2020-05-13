@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"at.fhj.iit","c":"SimpleDrink","l":"getAlcoholPercent()"},{"p":"at.fhj.iit","c":"SimpleDrink","l":"getVolume()"},{"p":"at.fhj.iit","c":"SimpleDrink","l":"isAlcoholic()"}]
