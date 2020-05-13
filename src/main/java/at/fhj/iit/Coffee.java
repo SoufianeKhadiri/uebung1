@@ -17,12 +17,22 @@ public class Coffee extends Drink {
 	
 	
 	// constructors
-
+	
+	/**
+	 * 
+	 * @param name
+	 */
 	public Coffee(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
 	
+	/**
+	 * 
+	 * @param name
+	 * @param intensity
+	 * @param origin
+	 */
 	public Coffee(String name, int intensity, String origin) {
 		super(name);
 		this.intensity = intensity;

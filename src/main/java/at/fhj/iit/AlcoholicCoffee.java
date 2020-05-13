@@ -14,31 +14,55 @@ public class AlcoholicCoffee extends Coffee {
 	
 	// attributes
 	
-	private boolean hasAlcohol;
+	private boolean isDeadly;
 	private String alcoholType;
 	
 	
 	// constructors
 
+	/**
+	 * 
+	 * @param name
+	 */
 	public AlcoholicCoffee(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 * 
+	 * @param name
+	 * @param intensity
+	 * @param origin
+	 */
 	public AlcoholicCoffee(String name, int intensity, String origin) {
 		super(name, intensity, origin);
 		// TODO Auto-generated constructor stub
 	}
 
-	public AlcoholicCoffee(String name, boolean hasAlcohol, String alcoholType) {
+	/**
+	 * 
+	 * @param name
+	 * @param isDeadly
+	 * @param alcoholType
+	 */
+	public AlcoholicCoffee(String name, boolean isDeadly, String alcoholType) {
 		super(name);
-		this.hasAlcohol = hasAlcohol;
+		this.isDeadly = isDeadly;
 		this.alcoholType = alcoholType;
 	}
 	
-	public AlcoholicCoffee(String name, int intensity, String origin, boolean hasAlcohol, String alcoholType) {
+	/**
+	 * 
+	 * @param name
+	 * @param intensity
+	 * @param origin
+	 * @param isDeadly
+	 * @param alcoholType
+	 */
+	public AlcoholicCoffee(String name, int intensity, String origin, boolean isDeadly, String alcoholType) {
 		super(name, intensity, origin);
-		this.hasAlcohol = hasAlcohol;
+		this.isDeadly = isDeadly;
 		this.alcoholType = alcoholType;
 	}
 	
@@ -49,14 +73,14 @@ public class AlcoholicCoffee extends Coffee {
 	 * @return the hasAlcohol
 	 */
 	public boolean isHasAlcohol() {
-		return hasAlcohol;
+		return isDeadly;
 	}
 
 	/**
 	 * @param hasAlcohol the hasAlcohol to set
 	 */
 	public void setHasAlcohol(boolean hasAlcohol) {
-		this.hasAlcohol = hasAlcohol;
+		this.isDeadly = hasAlcohol;
 	}
 
 	/**
@@ -119,5 +143,20 @@ public class AlcoholicCoffee extends Coffee {
 	}
 	
 	
-
+	// own methods
+	/**
+	 * just a little joke about the fact that too many alcoholic / deadly drinks reduce lifetime :)
+	 * @param numberOfDeadlyDrinks
+	 */
+	public void calcutateTimeToLive(int numberOfDeadlyDrinks) {
+		int percentOfLifeTime = 100;
+		int timeToLive;
+		try {
+			timeToLive = percentOfLifeTime / numberOfDeadlyDrinks;
+			System.out.println("If you drink too many deadly drinks, you have less lifetime left. You drank " + numberOfDeadlyDrinks + " and you have " + timeToLive + " years left. So don't overdoo it!!");
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Didn't the prof tell you 100 times not to divide my zero?!!");
+		}
+	}
 }

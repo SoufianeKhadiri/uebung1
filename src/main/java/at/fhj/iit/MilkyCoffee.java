@@ -19,6 +19,10 @@ public class MilkyCoffee extends Coffee {
 	
 	// constructors
 
+	/**
+	 * 
+	 * @param name
+	 */
 	public MilkyCoffee(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
