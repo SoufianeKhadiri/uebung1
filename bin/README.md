@@ -1,4 +1,5 @@
 # Software Configuration Management
+## Introduction
 This project is about learning to collaborate in small groups on GitHub,
 as well as testing the Java code with Junit.
 
@@ -11,4 +12,4 @@ than we added some new attributes to the subclass (“intensity” and “origin
 From this class we added again two subclasses that reflect flavors of coffee (“CoffeeWithMilk” and “CoffeWithAclohol”). 
 These also got new attributes (“hasAlcohol”, “alcoholType” and milkType respectively),
 and again the associated constructors and methods were added.
-Code Snippets
+## Code snippets
