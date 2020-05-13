@@ -14,12 +14,16 @@ and again the associated constructors and methods were added.
 Code Snippets
 
 public abstract class Drink {
-  
+    
+    //atribute
     protected String name;
     
+    //constructor
     public Drink(String name) {
         this.name = name;
     }
+    
+    //methods
     
     public abstract double getVolume();
     
